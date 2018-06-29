@@ -68,3 +68,12 @@ print(sorted(even-squares))
 print("Squares minus even")
 print(sorted(squares.difference(even)))
 print(sorted(squares-even))
+
+print("-" * 40)
+
+print(even)
+print(squares)
+#removes the elements that are found in squares
+even.difference_update(squares)
+print(even)
+
