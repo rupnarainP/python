@@ -31,7 +31,7 @@
 # squares_tuple = (4, 6, 9, 16, 25)
 # print(even)
 #
-# #using tuples to generae a set
+# #using tuples to generate a set
 # squares = set(squares_tuple)
 # print(squares)
 
@@ -71,9 +71,51 @@ print(sorted(squares-even))
 
 print("-" * 40)
 
-print(even)
-print(squares)
+print(sorted(even))
+print(sorted(squares))
 #removes the elements that are found in squares
 even.difference_update(squares)
-print(even)
+print(sorted(even))
 
+print("-" * 40)
+
+even = set(range(0, 40, 2))
+print(sorted(even))
+
+squares_tuple = (4, 6, 9, 16, 25)
+squares = set(squares_tuple)
+print(sorted(squares))
+
+# #adds everything except common elements to even
+# print("Symmetric even minus squares")
+# print(sorted(even.symmetric_difference(squares)))
+#
+# #adds everything except common elements to squares
+# print("Symmetric squares minus even")
+# print(sorted(squares.symmetric_difference(even)))
+
+# squares.discard(4)
+# squares.remove(6)
+# squares.discard(8) #no error, does nothing
+#
+# try:
+#     squares.remove(8) #gives error
+# except KeyError:
+#     print("8 does not exist")
+
+even = set(range(0, 40, 2))
+print(sorted(even))
+
+squares_tuple = (4, 6, 16)
+squares = set(squares_tuple)
+print(sorted(squares))
+
+if squares.issubset(even):
+    print("squares is a subset of even")
+
+if even.issuperset(squares):
+    print("even is a superset of squares")
+
+even = frozenset(range(0, 100, 2))
+
+print(even)

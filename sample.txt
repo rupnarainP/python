@@ -1,0 +1,15 @@
+This is sample text
+
+My name is Priyal
+1	 times 	2 is 	2
+2	 times 	2 is 	4
+3	 times 	2 is 	6
+4	 times 	2 is 	8
+5	 times 	2 is 	10
+6	 times 	2 is 	12
+7	 times 	2 is 	14
+8	 times 	2 is 	16
+9	 times 	2 is 	18
+10	 times 	2 is 	20
+11	 times 	2 is 	22
+12	 times 	2 is 	24
